@@ -4,7 +4,7 @@ from django.db import models
 class DestinoTuristico(models.Model):
     nombreCiudad = models.CharField(max_length=100)
     descripcionCiudad = models.TextField()
-    imagenCiudad = models.ImageField(upload_to='destinos/')
+    imagenCiudad = models.CharField(max_length=500)
     precioTour = models.DecimalField(max_digits=8, decimal_places=2)
     ofertaTour = models.BooleanField(default=False)
 
