@@ -1,3 +1,5 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,17 +8,26 @@
     <title>Editar Destino</title>
 </head>
 <body>
-    <h1>Editar Destino</h1>
+    <h1>Editar Destino Turístico</h1>
 
-    <form method="POST">
-        {% csrf_token %}
+    <div class="contenedor">
 
-        {{ form.as_p }}
+        <div class="card">
 
-        <button type="submit">
-            Actualizar
-        </button>
+            <form method="POST" enctype="multipart/form-data">
 
-    </form>
+                {% csrf_token %}
+
+                {{ form.as_p }}
+
+                <button type="submit" class="btn btn-editar">
+                    Guardar Cambios
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
 </body>
 </html>

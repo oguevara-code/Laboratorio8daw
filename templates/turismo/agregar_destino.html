@@ -1,23 +1,35 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agregar Destino</title>
+    <link rel="stylesheet" href="{% static 'css/estilos.css' %}">
 </head>
 <body>
     <h1>Agregar Destino Turístico</h1>
 
-    <form method="POST">
-    {% csrf_token %}
+    <div class="contenedor">
 
-    {{ form.as_p }}
+        <div class="card">
 
-    <button type="submit">
-        Guardar
-    </button>
+            <form method="POST" enctype="multipart/form-data">
 
-    </form>
+                {% csrf_token %}
+
+                {{ form.as_p }}
+
+                <button type="submit" class="btn btn-agregar">
+                    Guardar Destino
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
 
 </body>
 </html>

@@ -1,0 +1,92 @@
+body{
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin:0;
+    padding:0;
+}
+
+h1{
+    background:#d62828;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin:0;
+}
+
+.contenedor{
+    width:90%;
+    margin:auto;
+    padding:20px;
+}
+
+.card{
+    background:white;
+    padding:20px;
+    margin-bottom:20px;
+    border-radius:10px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.2);
+}
+
+.card img{
+    width:100%;
+    max-width:500px;
+    border-radius:10px;
+}
+
+.precio{
+    font-size:20px;
+    font-weight:bold;
+    color:#003049;
+}
+
+.oferta{
+    color:green;
+    font-weight:bold;
+}
+
+.no-oferta{
+    color:red;
+    font-weight:bold;
+}
+
+.btn{
+    display:inline-block;
+    padding:10px 15px;
+    text-decoration:none;
+    color:white;
+    border-radius:5px;
+    margin-top:10px;
+}
+
+.btn-agregar{
+    background:#2a9d8f;
+}
+
+.btn-editar{
+    background:#f77f00;
+}
+
+.btn-eliminar{
+    background:#d62828;
+}
+
+.btn:hover{
+    opacity:0.9;
+}
+
+input,
+textarea,
+select{
+    width:100%;
+    padding:10px;
+    margin-top:5px;
+    margin-bottom:15px;
+    border:1px solid #ccc;
+    border-radius:5px;
+    box-sizing:border-box;
+}
+
+button{
+    border:none;
+    cursor:pointer;
+}
